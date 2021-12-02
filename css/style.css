@@ -1,0 +1,47 @@
+body{
+    background-color: lightgrey;
+}
+
+.header{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.header .title{
+    text-decoration: underline;
+    text-decoration-color: grey;
+    color: white;
+    font-size: 45px;
+}
+
+.header span{
+    color: black;
+}
+
+.container{
+    width: 80%;
+    margin: 10px 10%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.column{
+    width: 30%;
+}
+
+.column img{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 769px) {
+    .container{
+        flex-direction: column;
+    }
+
+    .column{
+        width: 100%;
+    }
+}
